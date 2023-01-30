@@ -18,8 +18,8 @@ return new class extends Migration
             $table->string('name')->nullable();
             $table->string('address')->nullable();
             $table->string('email')->nullable();
-            $table->string('contact_no')->nullable();
-            $table->string('alt_contact_no')->nullable();
+            $table->string('contact_no', 10)->nullable();
+            $table->string('alt_contact_no', 10)->nullable();
             $table->string('country')->nullable();
             $table->string('state')->nullable();
             $table->string('city')->nullable();
@@ -27,10 +27,10 @@ return new class extends Migration
             $table->string('currency_symbol')->nullable();
             $table->string('currency_code')->nullable();
             $table->string('gst_no')->nullable();
-            $table->string('fiscal_start')->nullable();
-            $table->string('fiscal_end')->nullable();
-            $table->string('bookfrom_start')->nullable();
-            $table->string('bookfrom_end')->nullable();
+            $table->date('fiscal_year_start')->nullable();
+            $table->date('fiscal_year_end')->nullable();
+            $table->date('bookstart_from')->nullable();
+            $table->date('book_end')->nullable();
             $table->timestamps();
         });
     }
