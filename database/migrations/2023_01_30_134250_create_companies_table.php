@@ -25,8 +25,12 @@ return new class extends Migration
             $table->string('city')->nullable();
             $table->string('pincode')->nullable();
             $table->string('currency_symbol')->nullable();
-            $table->string('currency_name')->nullable();
+            $table->string('currency_code')->nullable();
             $table->string('gst_no')->nullable();
+            $table->string('fiscal_start')->nullable();
+            $table->string('fiscal_end')->nullable();
+            $table->string('bookfrom_start')->nullable();
+            $table->string('bookfrom_end')->nullable();
             $table->timestamps();
         });
     }
