@@ -18,8 +18,8 @@ return new class extends Migration
             $table->string('name')->nullable();
             $table->string('address')->nullable();
             $table->string('email')->nullable();
-            $table->string('contact_no',10)->nullable();
-            $table->string('alt_contact_no',10)->nullable();
+            $table->string('contact_no', 10)->nullable();
+            $table->string('alt_contact_no', 10)->nullable();
             $table->string('country')->nullable();
             $table->string('state')->nullable();
             $table->string('city')->nullable();
