@@ -5,11 +5,3 @@
         <p>Home</p>
     </a>
 </li>
-<li class="nav-item">
-    <a href="#" class=" bg-danger nav-link"
-        onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-        <i class="nav-icon fas fa-door-open"></i>
-        <p>LogOut</p>
-        <i class="nav-icon fas fa-arrow-alt-circle-right"></i>
-    </a>
-</li>

@@ -1,14 +1,14 @@
 import { defineConfig } from "vite";
 import laravel from "laravel-vite-plugin";
 import fs from "fs";
-const host = "CashFlowPro.local";
+const host = "cashflowpro.local";
 export default defineConfig({
     server: {
         host,
         hmr: { host },
         https: {
-            key: fs.readFileSync(`C:/laragon/etc/ssl/laragon.key`),
-            cert: fs.readFileSync(`C:/laragon/etc/ssl/laragon.crt`),
+            key: fs.readFileSync(`D:/laragon/etc/ssl/laragon.key`),
+            cert: fs.readFileSync(`D:/laragon/etc/ssl/laragon.crt`),
         },
     },
     plugins: [
