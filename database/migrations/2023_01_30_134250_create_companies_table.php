@@ -18,8 +18,8 @@ return new class extends Migration
             $table->string('name')->nullable();
             $table->string('address')->nullable();
             $table->string('email')->nullable();
-            $table->string('contact_no', 10)->nullable();
-            $table->string('alt_contact_no', 10)->nullable();
+            $table->string('contact_no')->nullable();
+            $table->string('alt_contact_no')->nullable();
             $table->string('country')->nullable();
             $table->string('state')->nullable();
             $table->string('city')->nullable();
@@ -29,8 +29,9 @@ return new class extends Migration
             $table->string('gst_no')->nullable();
             $table->date('fiscal_year_start')->nullable();
             $table->date('fiscal_year_end')->nullable();
-            $table->date('bookstart_from')->nullable();
+            $table->date('book_start_from')->nullable();
             $table->date('book_end')->nullable();
+            $table->softDeletes()->nullable();
             $table->timestamps();
         });
     }
